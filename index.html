@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién soy?</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/38d2bce2b9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav id="barra-navegacion" class="topnav">
+        <div class="logo">
+            <h3>ADRIAN VILLAMIL</h3>
+        </div>
+        <a href="javascript:void(0)" class="barras"><i class="fas fa-bars"></i></a>
+        <div id="contenedor-enlaces" class="enlaces">
+            <a href="#inicio" class="enlace">INICIO</a>
+            <a href="#about" class="enlace">SOBRE MI</a>
+            <a href="#galeria" class="enlace">GALERÍA</a>
+            <a href="#contacto" class="enlace">CONTACTO</a>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <div id="inicio">
+        <img src="images/escritorio.jpg" alt="Mi escritorio" title="Mi escritorio">
+    </div>
+
+    <!-- Sección de About -->
+    <section class="seccion" id="about">
+        <h2>Acerca de mi</h2>
+        <div class="about-contenedor">
+            <div class="contenedor-imagen">
+                <img src="images/mi-retrato.jpg" alt="Mi retrato">
+            </div>
+            <div class="contenedor-parrafos">
+                <p>
+                    Mi nombre es Adrián Villamil, tengo 26 años, soy estudiante de ingeniería de sistemas, estoy cursando el
+                    último semestre en la universidad de los llanos. Tengo conocimientos en java, python, html, css y
+                    javascript. He trabajado casi toda vida como auxiliar administrativo contable en una empresa de ingeniería
+                    civil.
+                </p>
+                <p>
+                    En mi tiempo libre suelo jugar videojuegos, especialmente juegos de disparos en primera persona. Me gusta
+                    leer libros de literatura y ficción, especialmente relacionados con crímenes y suspenso, pero últimamente no
+                    he leído mucho, me toca retomar con la lectura. También me gusta dibujar, lo hago desde que tengo memoria,
+                    amo demasiado el arte.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section class="seccion" id="galeria">
+        <h2>Galería</h2>
+        <p>Libros que me he leído.</p>
+        <div class="libros">
+            <figure>
+                <img src="images/libro-1.jpg" alt="libro-1">
+                <figcaption><cite>28 días</cite> <br>David Safier</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libro-2.jpg" alt="libro-2">
+                <figcaption><cite>La Letra con Sangre</cite> <br>Saul Black</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libro-3.jpg" alt="libro-3">
+                <figcaption><cite>La chica del tren</cite> <br>Paula Hawkins</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libro-4.jpg" alt="libro-4">
+                <figcaption><cite>Escrito en el agua</cite> <br>Paula Hawkins</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libro-5.jpg" alt="libro-5">
+                <figcaption><cite>La Pareja de al Lado</cite> <br>Shari Lapena</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libro-6.jpg" alt="libro-6">
+                <figcaption><cite>Un Extraño en Casa</cite> <br>Shari Lapena</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libro-7.jpg" alt="libro-7">
+                <figcaption><cite>Un invitado Inesperado</cite> <br>Shari Lapena</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libro-8.jpg" alt="libro-8">
+                <figcaption><cite>La Mujer en la Ventana</cite> <br>A.J. Finn</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libro-9.jpg" alt="libro-9">
+                <figcaption><cite>Toda la Verdad</cite> <br>Karen Cleveland</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libro-10.jpg" alt="libro-10">
+                <figcaption><cite>La Gran Mentira</cite> <br>Karen Cleveland</figcaption>
+            </figure>
+            <figure>
+                <img src="images/libro-11.jpg" alt="libro-11">
+                <figcaption><cite>La Cadena</cite> <br>Adrian McKinty</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="seccion" id="contacto">
+        <h2>Contacto</h2>
+        <div>
+            <address>
+                <i class="fas fa-map-marker-alt"></i> Villavicencio - Meta <br>
+                <i class="fas fa-phone-alt"></i> +57 301-260-4294 <br>
+                <i class="fas fa-envelope"></i> adrian.villamil@unillanos.edu.co
+            </address>
+            <form action="">
+                <h4>Comunícate con nosotros</h4>
+                <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required>
+                <input type="email" name="Correo" id="correo" placeholder="Correo" required>
+                <textarea name="Mensaje" id="mensaje" cols="30" rows="8" placeholder="Mensaje" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Encuentrame en las siguientes redes sociales</p>
+        <a href="https://www.instagram.com/adrian_villamil_art/"><i class="fab fa-instagram"></i></a>&nbsp&nbsp&nbsp
+        <a href="https://twitter.com/FelipeA59757082"><i class="fab fa-twitter"></i></a>&nbsp&nbsp&nbsp
+        <a href="https://www.facebook.com/profile.php?id=100010710877417"><i class="fab fa-facebook"></i></a>
+    </footer>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* nav bar - Barra de navegación */
+
+.topnav {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(26, 26, 26);
+    opacity: 1;
+}
+
+.logo h3 {
+    padding: 0 15px;
+    color: white;
+}
+
+.enlaces {
+    display: none;
+}
+
+.enlaces-responsive {
+    display: block;
+}
+
+.enlaces a {
+    display: block;
+    color: rgba(255, 255, 255, 0.527);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.enlaces a:hover, .barras:hover {
+    color: white;
+}
+
+.barras {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.527);
+    margin: 10px;
+    padding: 10px 15px;
+    top: 0;
+    right: 0;
+}
+
+/* Secciones */
+
+section.seccion {
+    padding: 50px 0;
+}
+
+section.seccion h2 {
+    text-align: center;
+}
+
+/* Imagen de Inicio */
+
+div#inicio img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+/* section About */
+
+.about-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-parrafos {
+    padding: 0 50px;
+}
+
+.contenedor-imagen img {
+    display: block;
+    width: 180px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkgray;
+    box-shadow: 0 0 10px;
+    transition: width 0.5s;
+}
+
+.contenedor-imagen img:hover {
+    width: 200px;
+}
+
+/* section Galería */
+
+section#galeria {
+    background-color: black;
+}
+
+section#galeria h2, section#galeria p {
+    color: white;
+}
+
+section#galeria p {
+    text-align: center;
+}
+
+section#galeria .libros {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+section#galeria .libros figure {
+    width: fit-content;
+    /*padding: 5px;*/
+    border: 2px solid white;
+    transition: box-shadow 0.3s;
+}
+
+section#galeria .libros figure:hover {
+    box-shadow: 0 0 40px rgb(5, 105, 219), 
+    0 0 30px rgb(85, 155, 255),
+    0 0 20px rgb(170, 205, 255),
+    0 0 10px rgb(255, 255, 255);
+    
+}
+
+section#galeria .libros figure img{
+    display: block;
+    width: 220px;
+}
+
+section#galeria .libros figure figcaption {
+    background-color: white;
+    text-align: center;
+}
+
+/* section Contacto */
+
+section#contacto div {
+    display: flex;
+    flex-direction: column;
+}
+
+section#contacto address {
+    width: fit-content;
+    margin: auto;
+}
+
+section#contacto form {
+    margin: auto;
+}
+
+section#contacto form h4 {
+    text-align: center;
+}
+
+section#contacto input, section#contacto textarea {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 18px;
+}
+
+section#contacto input[type="text"], section#contacto input[type="email"], section#contacto textarea#mensaje {
+    width: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+section#contacto input[type=submit] {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+section#contacto input[type=submit]:hover {
+    background-color: rgba(0, 0, 0, 0.836);
+    cursor: pointer;
+}
+
+/* Footer - Pie de página */
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.582);
+    font-size: x-large;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    section#galeria .libros {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .topnav {
+        flex-direction: row;
+    }
+
+    .enlaces {
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .enlaces a {
+        color: white;
+    }
+
+    .enlaces a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .barras {
+        display: none;
+    }
+
+    section#contacto div {
+        flex-direction: row;
+        width: 768px;
+        margin: auto;
+    }
+
+    section#contacto form {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about-contenedor {
+        flex-direction: row;
+    }
+    
+    .contenedor-imagen, .contenedor-parrafos {
+        width: 50%;
+    }
+
+    section#galeria .libros {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    section#galeria .libros {
+        grid-template-columns: auto auto auto auto;
+    }
+}
