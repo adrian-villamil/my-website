@@ -123,16 +123,16 @@ section#galeria .libros {
 section#galeria .libros figure {
     width: fit-content;
     /*padding: 5px;*/
-    border: 2px solid white;
-    transition: box-shadow 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.438);
+    transition: 0.3s;
 }
 
 section#galeria .libros figure:hover {
+    border-color: white;
     box-shadow: 0 0 40px rgb(5, 105, 219), 
     0 0 30px rgb(85, 155, 255),
     0 0 20px rgb(170, 205, 255),
     0 0 10px rgb(255, 255, 255);
-    
 }
 
 section#galeria .libros figure img{
